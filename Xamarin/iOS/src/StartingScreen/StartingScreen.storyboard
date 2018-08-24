@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="231">
+    <device id="ipad12_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Starting View Controller-->
+        <scene sceneID="230">
+            <objects>
+                <viewController id="231" customClass="StartingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="228"/>
+                        <viewControllerLayoutGuide type="bottom" id="229"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="232">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Welcome to Earth Lens" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="316" editable="NO" userInteractionEnabled="NO" adjustsFontForContentSizeCategory="YES" misplaced="YES">
+                                <rect key="frame" x="228.5" y="181" width="567" height="74"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint id="7340" firstItem="316" firstAttribute="width" constant="567"/>
+                                    <constraint id="9369" firstItem="316" firstAttribute="height" constant="45"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="319" editable="NO" userInteractionEnabled="NO" adjustsFontForContentSizeCategory="YES" misplaced="YES">
+                                <rect key="frame" x="291" y="305" width="442" height="175"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="6128"/>
+                                    <constraint id="7101" firstItem="319" firstAttribute="width" constant="550"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <string key="text">Earth Lens, a Microsoft Garage project, is an iOS application that helps people quickly identify and classify objects in aerial imagery through the power of machine learning. The Microsoft Garage is an outlet for experimental projects for you to try. </string>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="322" editable="NO" adjustsFontForContentSizeCategory="YES" misplaced="YES">
+                                <rect key="frame" x="362" y="490" width="300" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="500" id="4105"/>
+                                    <constraint firstAttribute="height" constant="40" id="4106"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="325" clipsSubviews="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" misplaced="YES" ambiguous="YES">
+                                <rect key="frame" x="431.5" y="1122" width="161" height="36"/>
+                                <color key="backgroundColor" red="0.039215686274509803" green="0.37647058823529411" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="4465"/>
+                                    <constraint firstAttribute="width" constant="161" id="4502"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                <state key="normal" title="Get Started">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="11095" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES" editable="NO" scrollEnabled="NO" adjustsFontForContentSizeCategory="YES">
+                                <rect key="frame" x="392" y="837" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <constraints>
+                                    <constraint id="11354" firstItem="11095" firstAttribute="width" constant="500"/>
+                                    <constraint id="11603" firstItem="11095" firstAttribute="height" constant="40"/>
+                                </constraints>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="325" firstAttribute="centerX" secondItem="232" secondAttribute="centerX" id="3785"/>
+                            <constraint firstItem="322" firstAttribute="centerX" secondItem="232" secondAttribute="centerX" id="4556"/>
+                            <constraint firstItem="319" firstAttribute="centerX" secondItem="232" secondAttribute="centerX" id="4587"/>
+                            <constraint firstItem="316" firstAttribute="centerX" secondItem="232" secondAttribute="centerX" id="4655"/>
+                            <constraint firstItem="319" firstAttribute="top" secondItem="316" secondAttribute="bottom" constant="20" id="5648"/>
+                            <constraint firstItem="322" firstAttribute="top" secondItem="319" secondAttribute="bottom" constant="15" id="6368"/>
+                            <constraint id="11107" firstItem="11095" firstAttribute="centerX" secondItem="232" secondAttribute="centerX"/>
+                            <constraint id="16466" firstItem="11095" firstAttribute="top" secondItem="322" secondAttribute="bottom" constant="20"/>
+                            <constraint id="22991" firstItem="316" firstAttribute="top" secondItem="228" secondAttribute="top" constant="150"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="StartButton" destination="325" id="name-outlet-325"/>
+                        <outlet property="StartDisclaimer" destination="322" id="name-outlet-322"/>
+                        <outlet property="StartSubtitle" destination="319" id="name-outlet-319"/>
+                        <outlet property="StartTitle" destination="316" id="name-outlet-316"/>
+                        <outlet property="PrivacyLink" destination="11095" id="name-outlet-11095"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="233" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="352" y="17"/>
+        </scene>
+    </scenes>
+</document>

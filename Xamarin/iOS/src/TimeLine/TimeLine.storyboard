@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="297">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+    </dependencies>
+    <scenes>
+        <scene sceneID="296">
+            <objects>
+                <viewController id="297" sceneMemberID="viewController" customClass="TimeLineViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="294"/>
+                        <viewControllerLayoutGuide type="bottom" id="295"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="298">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" id="788" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES" distribution="fillEqually">
+                                <rect key="frame" x="122" y="1336" width="184" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="789" translatesAutoresizingMaskIntoConstraints="NO" adjustsImageSizeForAccessibilityContentSizeCategory="YES">
+                                        <rect key="frame" x="0.0" y="0.0" width="37" height="30"/>
+                                        <color key="backgroundColor" colorSpace="calibratedRGB" red="0.81960784313725488" green="0.81960784313725488" blue="0.81960784313725488" alpha="1"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                        <state key="normal" title="View Detail" image="img/t-bounding_50.png"/>
+                                        <connections>
+                                            <action selector="ObjectBtn_TouchUpInside:" destination="791" id="790" eventType="touchUpInside"/>
+                                            <action selector="ObjectBtn_TouchUpInside:" destination="297" id="4389" eventType="touchUpInside"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6760" translatesAutoresizingMaskIntoConstraints="NO" adjustsImageSizeForAccessibilityContentSizeCategory="YES">
+                                        <rect key="frame" x="37" y="0.0" width="36.5" height="30"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                        <color key="backgroundColor" colorSpace="calibratedRGB" red="0.81960784313725488" green="0.81960784313725488" blue="0.81960784313725488" alpha="1"/>
+                                        <state key="normal" image="img/t-data-vis.png" title="Data Visualizer"/>
+                                        <connections>
+                                            <action selector="ObjectBtn_TouchUpInside:" destination="6762" id="6761" eventType="touchUpInside"/>
+                                            <action selector="ObjectBtn_TouchUpInside:" destination="6764" id="6763" eventType="touchUpInside"/>
+                                            <action selector="DataVisualizerBtn_TouchUpInside:" destination="297" id="7649" eventType="touchUpInside"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="792" translatesAutoresizingMaskIntoConstraints="NO" adjustsImageSizeForAccessibilityContentSizeCategory="YES">
+                                        <rect key="frame" x="73.5" y="0.0" width="37" height="30"/>
+                                        <color key="backgroundColor" colorSpace="calibratedRGB" red="0.81960784313725488" green="0.81960784313725488" blue="0.81960784313725488" alpha="1"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                        <state key="normal" title="Share" image="img/t-share_50.png"/>
+                                        <connections>
+                                            <action selector="ShareBtn_TouchUpInside:" destination="297" id="7422" eventType="touchUpInside"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="793" translatesAutoresizingMaskIntoConstraints="NO" adjustsImageSizeForAccessibilityContentSizeCategory="YES">
+                                        <rect key="frame" x="110.5" y="0.0" width="36.5" height="30"/>
+                                        <color key="backgroundColor" colorSpace="calibratedRGB" red="0.81960784313725488" green="0.81960784313725488" blue="0.81960784313725488" alpha="1"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                        <state key="normal" title="Save" image="img/t-save.png"/>
+                                        <connections/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="794" translatesAutoresizingMaskIntoConstraints="NO" adjustsImageSizeForAccessibilityContentSizeCategory="YES">
+                                        <rect key="frame" x="147" y="0.0" width="37" height="30"/>
+                                        <color key="backgroundColor" colorSpace="calibratedRGB" red="0.81960784313725488" green="0.81960784313725488" blue="0.81960784313725488" alpha="1"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                        <state key="normal" title="Info" image="img/t-info_50.png"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint id="795" firstItem="788" firstAttribute="height" constant="50"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" id="3053" hidden="YES">
+                                <rect key="frame" x="52" y="50" width="320" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" id="3054" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="60"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" id="3056" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                                <rect key="frame" x="0.0" y="0.0" width="240" height="60"/>
+                                                <subviews>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="3057" translatesAutoresizingMaskIntoConstraints="NO" editable="NO" scrollEnabled="NO">
+                                                        <rect key="frame" x="10" y="5" width="198" height="30"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                        <constraints>
+                                                            <constraint id="3058" firstItem="3057" firstAttribute="height" constant="30"/>
+                                                            <constraint id="3059" firstItem="3057" firstAttribute="width" constant="198"/>
+                                                        </constraints>
+                                                    </textView>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="3060" translatesAutoresizingMaskIntoConstraints="NO" editable="NO" misplaced="YES" scrollEnabled="NO">
+                                                        <rect key="frame" x="11" y="35" width="198" height="25"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                        <constraints>
+                                                            <constraint id="3061" firstItem="3060" firstAttribute="height" constant="36"/>
+                                                            <constraint id="3062" firstItem="3060" firstAttribute="width" constant="300"/>
+                                                        </constraints>
+                                                    </textView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3063" translatesAutoresizingMaskIntoConstraints="NO">
+                                                        <rect key="frame" x="290" y="10" width="20" height="20"/>
+                                                        <connections>
+                                                            <action selector="SidebarClose_TouchUpInside:" destination="3065" id="3064" eventType="touchUpInside"/>
+                                                            <action selector="SidebarClose_TouchUpInside:" destination="297" id="5180" eventType="touchUpInside"/>
+                                                        </connections>
+                                                        <constraints>
+                                                            <constraint id="3066" firstItem="3063" firstAttribute="width" constant="20"/>
+                                                            <constraint id="3067" firstItem="3063" firstAttribute="height" constant="20"/>
+                                                        </constraints>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint id="3068" firstItem="3056" firstAttribute="width" constant="320"/>
+                                                    <constraint id="3069" firstItem="3056" firstAttribute="height" constant="140"/>
+                                                    <constraint id="3070" firstItem="3063" firstAttribute="top" secondItem="3056" secondAttribute="top" constant="10"/>
+                                                    <constraint id="3071" firstItem="3063" firstAttribute="centerX" secondItem="3056" secondAttribute="centerX" constant="140"/>
+                                                    <constraint id="3072" firstItem="3057" firstAttribute="top" secondItem="3056" secondAttribute="top" constant="5"/>
+                                                    <constraint id="3073" firstItem="3057" firstAttribute="leading" secondItem="3056" secondAttribute="leading" constant="10"/>
+                                                    <constraint id="3074" firstItem="3060" firstAttribute="leading" secondItem="3056" secondAttribute="leading" constant="10"/>
+                                                    <constraint id="3075" firstItem="3060" firstAttribute="top" secondItem="3056" secondAttribute="top" constant="35"/>
+                                                </constraints>
+                                                <color key="backgroundColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint id="3055" firstItem="3054" firstAttribute="height" constant="300"/>
+                                            <constraint id="3076" firstItem="3054" firstAttribute="width" constant="320"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="3055"/>
+                                            </mask>
+                                        </variation>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" id="3077" translatesAutoresizingMaskIntoConstraints="NO">
+                                        <rect key="frame" x="0.0" y="260" width="320" height="40"/>
+                                        <color key="backgroundColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" id="3078" translatesAutoresizingMaskIntoConstraints="NO">
+                                                <rect key="frame" x="145" y="18" width="30" height="5"/>
+                                                <color key="backgroundColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <constraints>
+                                                    <constraint id="3079" firstItem="3078" firstAttribute="height" constant="5"/>
+                                                    <constraint id="3080" firstItem="3078" firstAttribute="width" constant="30"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint id="3081" firstItem="3077" firstAttribute="width" constant="320"/>
+                                            <constraint id="3082" firstItem="3077" firstAttribute="height" constant="40"/>
+                                            <constraint id="3083" firstItem="3078" firstAttribute="top" secondItem="3077" secondAttribute="top" constant="18"/>
+                                            <constraint id="3084" firstItem="3078" firstAttribute="leading" secondItem="3077" secondAttribute="leading" constant="145"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint id="3085" firstItem="3053" firstAttribute="width" constant="320"/>
+                                    <constraint id="3086" firstItem="3053" firstAttribute="height" constant="300"/>
+                                    <constraint id="3087" firstItem="3054" firstAttribute="centerX" secondItem="3053" secondAttribute="centerX"/>
+                                    <constraint id="3088" firstItem="3054" firstAttribute="top" secondItem="3053" secondAttribute="top"/>
+                                    <constraint id="3089" firstItem="3077" firstAttribute="bottom" secondItem="3053" secondAttribute="bottom"/>
+                                    <constraint id="3090" firstItem="3077" firstAttribute="leading" secondItem="3053" secondAttribute="leading"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint id="1081" firstItem="788" firstAttribute="bottom" secondItem="298" secondAttribute="bottom"/>
+                            <constraint id="1153" firstItem="298" firstAttribute="trailing" secondItem="788" secondAttribute="trailing"/>
+                            <constraint id="1367" firstItem="788" firstAttribute="leading" secondItem="298" secondAttribute="leading"/>
+                            <constraint id="1581" firstItem="298" firstAttribute="centerX" secondItem="788" secondAttribute="centerX"/>
+                            <constraint id="6012" firstItem="3053" firstAttribute="top" secondItem="294" secondAttribute="bottom" constant="37"/>
+                            <constraint id="6155" firstItem="3053" firstAttribute="leading" secondItem="298" secondAttribute="leading" constant="15"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ToolBar" destination="788" id="name-outlet-788"/>
+                        <outlet property="ObjectBtn" destination="789" id="name-outlet-789"/>
+                        <outlet property="ShareBtn" destination="792" id="name-outlet-792"/>
+                        <outlet property="SaveBtn" destination="793" id="name-outlet-793"/>
+                        <outlet property="SettingBtn" destination="794" id="name-outlet-794"/>
+                        <outlet property="SidebarView" destination="3053" id="name-outlet-3053"/>
+                        <outlet property="SelectedClass" destination="3060" id="name-outlet-3060"/>
+                        <outlet property="ToggleView" destination="3077" id="name-outlet-3077"/>
+                        <outlet property="SearchView" destination="3056" id="name-outlet-3056"/>
+                        <outlet property="ClassCount" destination="3057" id="name-outlet-3057"/>
+                        <outlet property="SidebarClose" destination="3063" id="name-outlet-3063"/>
+                        <outlet property="SideBarToggle" destination="3078" id="name-outlet-3078"/>
+                        <outlet property="SidebarXOffset" destination="6155" id="name-outlet-6155"/>
+                        <outlet property="sidebarYOffset" destination="6012" id="name-outlet-6012"/>
+                        <outlet property="DefaultHeight" destination="3086" id="name-outlet-3086"/>
+                        <outlet property="ToggleHeight" destination="3082" id="name-outlet-3082"/>
+                        <outlet property="ClassCountHeight" destination="3058" id="name-outlet-3058"/>
+                        <outlet property="SelectedClassHeight" destination="3061" id="name-outlet-3061"/>
+                        <outlet property="TextviewTopPadding" destination="3072" id="name-outlet-3072"/>
+                        <outlet property="SidebarWidth" destination="3068" id="name-outlet-3068"/>
+                        <outlet property="CloseBtnHeight" destination="3069" id="name-outlet-3069"/>
+                        <outlet property="Sidebar" destination="3054" id="name-outlet-3054"/>
+                        <outlet property="DataVisualizerBtn" destination="6760" id="name-outlet-6760"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="299" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="92" y="-126"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="img/t-save.png" width="12" height="22"/>
+        <image name="img/t-bounding_50.png" width="23" height="24"/>
+        <image name="img/t-info_50.png" width="22" height="22"/>
+        <image name="img/t-share_50.png" width="19" height="26"/>
+        <image name="img/t-data-vis.png" width="18" height="22"/>
+    </resources>
+</document>

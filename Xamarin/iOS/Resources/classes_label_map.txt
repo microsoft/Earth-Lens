@@ -1,0 +1,88 @@
+item {
+  id:1
+  name:'Fixed-wing Aircraft'
+}
+item {
+  id:2
+  name:'Small Aircraft'
+}
+item {
+  id:3
+  name:'Passenger/Cargo Plane'
+}
+item {
+  id:4
+  name:'Small Car'
+}
+item {
+  id:5
+  name:'Bus'
+}
+item {
+  id:6
+  name:'Utility Truck'
+}
+item {
+  id:7
+  name:'Truck'
+}
+item {
+  id:8
+  name:'Cargo Truck'
+}
+item {
+  id:9
+  name:'Maritime Vessel'
+}
+item {
+  id:10
+  name:'Motorboat'
+}
+item {
+  id:11
+  name:'Sailboat'
+}
+item {
+  id:12
+  name:'Tugboat'
+}
+item {
+  id:13
+  name:'Barge'
+}
+item {
+  id:14
+  name:'Fishing Vessel'
+}
+item {
+  id:15
+  name:'Ferry'
+}
+item {
+  id:16
+  name:'Yacht'
+}
+item {
+  id:17
+  name:'Container Ship'
+}
+item {
+  id:18
+  name:'Haul Truck'
+}
+item {
+  id:19
+  name:'Excavator'
+}
+item {
+  id:20
+  name:'Building'
+}
+item {
+  id:21
+  name:'Construction Site'
+}
+item {
+  id:22
+  name:'Storage Tank'
+}

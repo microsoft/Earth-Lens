@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="385">
+    <device id="ipad12_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome Splash View Controller-->
+        <scene sceneID="384">
+            <objects>
+                <viewController id="385" customClass="WelcomeSplashViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="382"/>
+                        <viewControllerLayoutGuide type="bottom" id="383"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="386">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" contentMode="scaleToFill" text="Earth Lens: AI for Earth" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="540" adjustsFontForContentSizeCategory="YES" editable="NO" selectable="NO" opaque="NO" userInteractionEnabled="NO" scrollEnabled="NO" misplaced="YES">
+                                <rect key="frame" x="226" y="632" width="573" height="79"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <constraints>
+                                    <constraint id="15229" firstItem="540" firstAttribute="height" constant="79"/>
+                                    <constraint id="19302" firstItem="540" firstAttribute="width" constant="573"/>
+                                </constraints>
+                            </textView>
+                            <textView clipsSubviews="YES" contentMode="scaleToFill" textAlignment="center" id="3843" translatesAutoresizingMaskIntoConstraints="NO" text="A Microsoft Garage project" adjustsFontForContentSizeCategory="YES" editable="NO" selectable="NO" opaque="NO" scrollEnabled="NO" userInteractionEnabled="NO">
+                                <rect key="frame" x="255" y="692.5" width="514" height="56"/>
+                                <color key="backgroundColor" colorSpace="calibratedWhite" white="0" alpha="1"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint id="14696" firstItem="3843" firstAttribute="width" constant="514"/>
+                                    <constraint id="14722" firstItem="3843" firstAttribute="height" constant="56"/>
+                                </constraints>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" colorSpace="calibratedWhite" white="0" alpha="1"/>
+                        <constraints>
+                            <constraint id="9566" firstItem="540" firstAttribute="centerX" secondItem="386" secondAttribute="centerX"/>
+                            <constraint id="9592" firstItem="3843" firstAttribute="centerX" secondItem="386" secondAttribute="centerX"/>
+                            <constraint id="11687" firstItem="386" firstAttribute="centerY" secondItem="540" secondAttribute="centerY" constant="10"/>
+                            <constraint id="14664" firstItem="540" firstAttribute="bottom" secondItem="3843" secondAttribute="top" constant="20"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="387" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="436.5108" y="-44.60432"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad12_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" customColorSpace="sRGB" cocoaTouchSystemColor="darkTextColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" id="34132" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES" distribution="fillEqually">
+                                <rect key="frame" x="122" y="1336" width="184" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="34133" translatesAutoresizingMaskIntoConstraints="NO" adjustsImageSizeForAccessibilityContentSizeCategory="YES">
+                                        <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                        <color key="backgroundColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                        <state key="normal" title="View Detail" image="img/t-bounding_50.png"/>
+                                        <connections>
+                                            <action selector="ObjectBtn_TouchUpInside:" destination="BYZ-38-t0r" id="160710" eventType="touchUpInside"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="34136" translatesAutoresizingMaskIntoConstraints="NO" adjustsImageSizeForAccessibilityContentSizeCategory="YES">
+                                        <rect key="frame" x="46" y="0.0" width="46" height="30"/>
+                                        <color key="backgroundColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                        <state key="normal" title="Share" image="img/t-share_50.png"/>
+                                        <connections>
+                                            <action selector="ShareBtn_TouchUpInside:" destination="BYZ-38-t0r" id="161329" eventType="touchUpInside"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="34135" translatesAutoresizingMaskIntoConstraints="NO" adjustsImageSizeForAccessibilityContentSizeCategory="YES">
+                                        <rect key="frame" x="92" y="0.0" width="46" height="30"/>
+                                        <color key="backgroundColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                        <state key="normal" title="Save" image="img/t-save.png"/>
+                                        <connections/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="34134" translatesAutoresizingMaskIntoConstraints="NO" adjustsImageSizeForAccessibilityContentSizeCategory="YES">
+                                        <rect key="frame" x="138" y="0.0" width="46" height="30"/>
+                                        <color key="backgroundColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                        <state key="normal" title="Info" image="img/t-info_50.png"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint id="39626" firstItem="34132" firstAttribute="height" constant="50"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" id="135579" hidden="YES">
+                                <rect key="frame" x="52" y="50" width="320" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" id="90119" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="60"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" id="96041" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                                <rect key="frame" x="0.0" y="0.0" width="240" height="60"/>
+                                                <subviews>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="156099" translatesAutoresizingMaskIntoConstraints="NO" editable="NO" scrollEnabled="NO">
+                                                        <rect key="frame" x="10" y="5" width="198" height="30"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                        <constraints>
+                                                            <constraint id="156100" firstItem="156099" firstAttribute="height" constant="30"/>
+                                                            <constraint id="156101" firstItem="156099" firstAttribute="width" constant="198"/>
+                                                        </constraints>
+                                                    </textView>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="156426" translatesAutoresizingMaskIntoConstraints="NO" editable="NO" misplaced="YES" scrollEnabled="NO">
+                                                        <rect key="frame" x="11" y="35" width="198" height="25"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                        <constraints>
+                                                            <constraint id="156427" firstItem="156426" firstAttribute="height" constant="36"/>
+                                                            <constraint id="156428" firstItem="156426" firstAttribute="width" constant="300"/>
+                                                        </constraints>
+                                                    </textView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="58144" translatesAutoresizingMaskIntoConstraints="NO">
+                                                        <rect key="frame" x="290" y="10" width="20" height="20"/>
+                                                        <connections>
+                                                            <action selector="SidebarClose_TouchUpInside:" destination="BYZ-38-t0r" id="58401" eventType="touchUpInside"/>
+                                                        </connections>
+                                                        <constraints>
+                                                            <constraint id="96045" firstItem="58144" firstAttribute="width" constant="20"/>
+                                                            <constraint id="96046" firstItem="58144" firstAttribute="height" constant="20"/>
+                                                        </constraints>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint id="96912" firstItem="96041" firstAttribute="width" constant="320"/>
+                                                    <constraint id="138091" firstItem="96041" firstAttribute="height" constant="140"/>
+                                                    <constraint id="155785" firstItem="58144" firstAttribute="top" secondItem="96041" secondAttribute="top" constant="10"/>
+                                                    <constraint id="155786" firstItem="58144" firstAttribute="centerX" secondItem="96041" secondAttribute="centerX" constant="140"/>
+                                                    <constraint id="156102" firstItem="156099" firstAttribute="top" secondItem="96041" secondAttribute="top" constant="5"/>
+                                                    <constraint id="157430" firstItem="156099" firstAttribute="leading" secondItem="96041" secondAttribute="leading" constant="10"/>
+                                                    <constraint id="158481" firstItem="156426" firstAttribute="leading" secondItem="96041" secondAttribute="leading" constant="10"/>
+                                                    <constraint id="159810" firstItem="156426" firstAttribute="top" secondItem="96041" secondAttribute="top" constant="35"/>
+                                                </constraints>
+                                                <color key="backgroundColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint id="129227" firstItem="90119" firstAttribute="height" constant="300"/>
+                                            <constraint id="138092" firstItem="90119" firstAttribute="width" constant="320"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="129227"/>
+                                            </mask>
+                                        </variation>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" id="75833" translatesAutoresizingMaskIntoConstraints="NO">
+                                        <rect key="frame" x="0.0" y="260" width="320" height="40"/>
+                                        <color key="backgroundColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" id="72950" translatesAutoresizingMaskIntoConstraints="NO">
+                                                <rect key="frame" x="145" y="18" width="30" height="5"/>
+                                                <color key="backgroundColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <constraints>
+                                                    <constraint id="72953" firstItem="72950" firstAttribute="height" constant="5"/>
+                                                    <constraint id="72954" firstItem="72950" firstAttribute="width" constant="30"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint id="92867" firstItem="75833" firstAttribute="width" constant="320"/>
+                                            <constraint id="94318" firstItem="75833" firstAttribute="height" constant="40"/>
+                                            <constraint id="143116" firstItem="72950" firstAttribute="top" secondItem="75833" secondAttribute="top" constant="18"/>
+                                            <constraint id="143117" firstItem="72950" firstAttribute="leading" secondItem="75833" secondAttribute="leading" constant="145"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint id="135580" firstItem="135579" firstAttribute="width" constant="320"/>
+                                    <constraint id="135581" firstItem="135579" firstAttribute="height" constant="300"/>
+                                    <constraint id="136834" firstItem="90119" firstAttribute="centerX" secondItem="135579" secondAttribute="centerX"/>
+                                    <constraint id="136835" firstItem="90119" firstAttribute="top" secondItem="135579" secondAttribute="top"/>
+                                    <constraint id="143689" firstItem="75833" firstAttribute="bottom" secondItem="135579" secondAttribute="bottom"/>
+                                    <constraint id="151237" firstItem="75833" firstAttribute="leading" secondItem="135579" secondAttribute="leading"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint id="34137" firstItem="34132" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="bottom"/>
+                            <constraint id="138481" firstItem="135579" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="37"/>
+                            <constraint id="161930" firstItem="34132" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading"/>
+                            <constraint id="161931" firstItem="8bC-Xf-vdC" firstAttribute="centerX" secondItem="34132" secondAttribute="centerX"/>
+                            <constraint id="161932" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="34132" secondAttribute="trailing"/>
+                            <constraint id="161933" firstItem="135579" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="15"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ToolBar" destination="34132" id="name-outlet-34132"/>
+                        <outlet property="ObjectBtn" destination="34133" id="name-outlet-34133"/>
+                        <outlet property="SaveBtn" destination="34135" id="name-outlet-34135"/>
+                        <outlet property="SettingBtn" destination="34134" id="name-outlet-34134"/>
+                        <outlet property="searchDisplayController" destination="96064" id="96063"/>
+                        <outlet property="ShareBtn" destination="34136" id="name-outlet-34136"/>
+                        <outlet property="Sidebar" destination="90119" id="name-outlet-90119"/>
+                        <outlet property="SidebarClose" destination="58144" id="name-outlet-58144"/>
+                        <outlet property="SearchView" destination="96041" id="name-outlet-96041"/>
+                        <outlet property="SidebarWidth" destination="96912" id="name-outlet-96912"/>
+                        <outlet property="SidebarView" destination="135579" id="name-outlet-135579"/>
+                        <outlet property="CloseBtnHeight" destination="138091" id="name-outlet-138091"/>
+                        <outlet property="sidebarYOffset" destination="138481" id="name-outlet-138481"/>
+                        <outlet property="SideBarToggle" destination="72950" id="name-outlet-72950"/>
+                        <outlet property="ToggleView" destination="75833" id="name-outlet-75833"/>
+                        <outlet property="ToggleHeight" destination="94318" id="name-outlet-94318"/>
+                        <outlet property="ClassCount" destination="156099" id="name-outlet-156099"/>
+                        <outlet property="SelectedClass" destination="156426" id="name-outlet-156426"/>
+                        <outlet property="SelectedClassHeight" destination="156427" id="name-outlet-156427"/>
+                        <outlet property="ClassCountHeight" destination="156100" id="name-outlet-156100"/>
+                        <outlet property="TextviewTopPadding" destination="156102" id="name-outlet-156102"/>
+                        <outlet property="DefaultHeight" destination="135581" id="name-outlet-135581"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="96064">
+                    <connections>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="96065"/>
+                        <outlet property="searchBar" destination="96061" id="96066"/>
+                        <outlet property="searchContentsController" destination="BYZ-38-t0r" id="96067"/>
+                        <outlet property="searchResultsDataSource" destination="BYZ-38-t0r" id="96068"/>
+                        <outlet property="searchResultsDelegate" destination="BYZ-38-t0r" id="96069"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="-589" y="-143"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="img/t-bounding_50.png" width="23" height="24"/>
+        <image name="img/t-info_50.png" width="22" height="22"/>
+        <image name="img/t-share_50.png" width="19" height="26"/>
+        <image name="img/t-save.png" width="12" height="22"/>
+    </resources>
+</document>

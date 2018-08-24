@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{9A9031C9-D575-4877-9CBD-4845C96CFA6E}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>EarthLens</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)src\" />
+    <Folder Include="$(MSBuildThisFileDirectory)src\Models\" />
+    <Folder Include="$(MSBuildThisFileDirectory)src\ClassExtensions\" />
+    <Folder Include="$(MSBuildThisFileDirectory)src\Services\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)src\Models\Category.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Models\GalleryImageSection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Models\ImageEntry.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Models\MegaCategory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Models\Observation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Models\CategoryManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Models\Chip.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\ClassExtensions\SKRectExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Services\DatabaseService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Services\EnvironmentService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Services\GraphicService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Services\ImageAnalysisService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Services\ImageEncodingService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\SharedConstants.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\ORM\ImageDAO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\ORM\ObservationDAO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Services\PostProcessingService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Services\JSONService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Services\MachineLearningService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Resources\MegaCategory_Category_mapping.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <LogicalName>EarthLens.Resources.MegaCategory_Category_mapping.json</LogicalName>
+      <IncludeInPackage>true</IncludeInPackage>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

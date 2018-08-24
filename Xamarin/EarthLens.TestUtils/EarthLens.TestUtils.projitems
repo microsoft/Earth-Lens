@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>5C632DDA-178A-495C-9AC7-F2AC3E4937BF</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>EarthLens.TestUtils</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)src\TestUtils\AssertUtils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\TestUtils\DatabaseUtils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\TestUtils\GraphicUtils.cs" />
+  </ItemGroup>
+</Project>

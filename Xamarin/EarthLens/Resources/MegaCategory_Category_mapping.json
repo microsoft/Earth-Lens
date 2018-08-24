@@ -1,0 +1,20 @@
+﻿[
+  {
+    "name": "Civilian Vehicles",
+    "subcategories": [ "Small Car", "Bus", "Truck" ] }, 
+  {
+    "name": "Industry Vehicles",
+    "subcategories": [ "Haul Truck", "Excavator", "Utility Truck", "Cargo Truck" ] },
+  {
+    "name": "Civilian Boats",
+    "subcategories": [ "Motorboat", "Sailboat", "Ferry", "Yacht" ] },
+  {
+    "name": "Industry Boats",
+    "subcategories": [ "Tugboat", "Barge", "Fishing Vessel", "Container Ship", "Maritime Vessel" ] },
+  {
+    "name": "Aircrafts",
+    "subcategories": [ "Fixed-wing aircraft", "Small Aircraft", "Passenger/Cargo Plane" ] },
+  {
+    "name": "Structures & Sites",
+    "subcategories": [ "Building", "Construction Site", "Storage Tank" ] } 
+]

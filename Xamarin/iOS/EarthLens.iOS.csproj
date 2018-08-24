@@ -1,0 +1,306 @@
+﻿<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{1799F8D9-A611-4D3E-BB4B-31581FBAC419}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>EarthLens.iOS</RootNamespace>
+    <AssemblyName>EarthLens.iOS</AssemblyName>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    <IOSDebuggerPort>46654</IOSDebuggerPort>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchProfiling>true</MtouchProfiling>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <IOSDebuggerPort>43882</IOSDebuggerPort>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+    <MtouchProfiling>true</MtouchProfiling>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="Calabash">
+      <HintPath>..\packages\Xamarin.TestCloud.Agent.0.20.3\lib\Xamarin.iOS10\Calabash.dll</HintPath>
+    </Reference>
+    <Reference Include="SkiaSharp">
+      <HintPath>..\packages\SkiaSharp.1.60.1\lib\Xamarin.iOS\SkiaSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="SkiaSharp.Components">
+      <HintPath>..\packages\SkiaSharp.Components.0.7.2\lib\xamarinios\SkiaSharp.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="SkiaSharp.Components.iOS">
+      <HintPath>..\packages\SkiaSharp.Components.0.7.2\lib\xamarinios\SkiaSharp.Components.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="SkiaSharp.Views.iOS">
+      <HintPath>..\packages\SkiaSharp.Views.1.60.1\lib\Xamarin.iOS\SkiaSharp.Views.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AppCenter">
+      <HintPath>..\packages\Microsoft.AppCenter.1.6.1\lib\Xamarin.iOS10\Microsoft.AppCenter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AppCenter.iOS.Bindings">
+      <HintPath>..\packages\Microsoft.AppCenter.1.6.1\lib\Xamarin.iOS10\Microsoft.AppCenter.iOS.Bindings.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AppCenter.Crashes">
+      <HintPath>..\packages\Microsoft.AppCenter.Crashes.1.6.1\lib\Xamarin.iOS10\Microsoft.AppCenter.Crashes.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AppCenter.Crashes.iOS.Bindings">
+      <HintPath>..\packages\Microsoft.AppCenter.Crashes.1.6.1\lib\Xamarin.iOS10\Microsoft.AppCenter.Crashes.iOS.Bindings.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AppCenter.Analytics">
+      <HintPath>..\packages\Microsoft.AppCenter.Analytics.1.6.1\lib\Xamarin.iOS10\Microsoft.AppCenter.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AppCenter.Analytics.iOS.Bindings">
+      <HintPath>..\packages\Microsoft.AppCenter.Analytics.1.6.1\lib\Xamarin.iOS10\Microsoft.AppCenter.Analytics.iOS.Bindings.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="LiteDB">
+      <HintPath>..\packages\LiteDB.4.1.4\lib\netstandard2.0\LiteDB.dll</HintPath>
+    </Reference>
+    <Reference Include="GMImagePicker.Xamarin">
+      <HintPath>..\packages\GMImagePicker.Xamarin.2.3.0\lib\xamarinios10\GMImagePicker.Xamarin.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon-1.appiconset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\AppIcon-2.appiconset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\AppIcon-1.appiconset\167.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon-1.appiconset\1024.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="src\" />
+    <Folder Include="src\ClassExtensions\" />
+    <Folder Include="src\AnalyzingPage\" />
+    <Folder Include="src\ImageUpload\" />
+    <Folder Include="src\StartingScreen\" />
+    <Folder Include="src\SingleImage\" />
+    <Folder Include="Resources\img\" />
+    <Folder Include="src\Sidebar\" />
+    <Folder Include="src\WelcomeSplash\" />
+    <Folder Include="src\Services\" />
+    <Folder Include="src\Gallery\" />
+    <Folder Include="src\Popover\" />
+    <Folder Include="src\ColourPicker\" />
+    <Folder Include="src\TimeLine\" />
+    <Folder Include="src\Results\" />
+    <Folder Include="src\Settings\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="src\LaunchScreen.storyboard" />
+    <InterfaceDefinition Include="src\AnalyzingPage\AnalyzingPage.storyboard" />
+    <InterfaceDefinition Include="src\ImageUpload\ImageUpload.storyboard" />
+    <InterfaceDefinition Include="src\SingleImage\SingleImage.storyboard" />
+    <InterfaceDefinition Include="src\StartingScreen\StartingScreen.storyboard" />
+    <InterfaceDefinition Include="src\Popover\EditModalController.xib">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="src\Sidebar\FilterCellViewController.xib" />
+    <InterfaceDefinition Include="src\WelcomeSplash\WelcomeSplash.storyboard" />
+    <InterfaceDefinition Include="src\Gallery\Gallery.storyboard" />
+    <InterfaceDefinition Include="src\Popover\PopoverViewController.xib" />
+    <InterfaceDefinition Include="src\ColourPicker\ColourPickerViewController.xib">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInPackage>true</IncludeInPackage>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="src\Settings\Settings.storyboard" />
+    <InterfaceDefinition Include="src\TimeLine\TimeLine.storyboard" />
+    <InterfaceDefinition Include="src\Results\ResultsViewController.xib" />
+    <InterfaceDefinition Include="src\Results\NewSessionChoiceViewController.xib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+    <None Include="packages.config" />
+    <None Include="appcenter-pre-build.sh" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="src\AppDelegate.cs" />
+    <Compile Include="src\DataVisualization\BarChart.cs" />
+    <Compile Include="src\DataVisualization\BarChartSeries.cs" />
+    <Compile Include="src\DataVisualization\DataVisualizer.cs" />
+    <Compile Include="src\DataVisualization\DataVisualizationUtils.cs" />
+    <Compile Include="src\Gallery\GalleryDataSource.cs" />
+    <Compile Include="src\Gallery\GalleryImageCell.cs" />
+    <Compile Include="src\Gallery\GalleryImageCell.designer.cs">
+      <DependentUpon>GalleryImageCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\ImageUpload\ImageUploadTemplate.cs" />
+    <Compile Include="src\Main.cs" />
+    <Compile Include="src\ClassExtensions\CGRectExtensions.cs" />
+    <Compile Include="src\AnalyzingPage\AnalyzingPageViewController.cs" />
+    <Compile Include="src\AnalyzingPage\AnalyzingPageViewController.designer.cs">
+      <DependentUpon>AnalyzingPageViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Constants.cs" />
+    <Compile Include="src\ImageUpload\ImageUploadViewController.cs" />
+    <Compile Include="src\ImageUpload\ImageUploadViewController.designer.cs">
+      <DependentUpon>ImageUploadViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\SingleImage\SingleImageViewController.cs" />
+    <Compile Include="src\SingleImage\SingleImageViewController.designer.cs">
+      <DependentUpon>SingleImageViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Services\ChipAnalysisService.cs" />
+    <Compile Include="src\Services\PreProcessingService.cs" />
+    <Compile Include="src\StartingScreen\StartingViewController.cs" />
+    <Compile Include="src\StartingScreen\StartingViewController.designer.cs">
+      <DependentUpon>StartingViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\ClassExtensions\SKRectExtensions.cs" />
+    <Compile Include="src\Sidebar\FilterViewController.cs" />
+    <Compile Include="src\Sidebar\FilterViewController.designer.cs">
+      <DependentUpon>FilterViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\WelcomeSplash\WelcomeSplashViewController.cs" />
+    <Compile Include="src\WelcomeSplash\WelcomeSplashViewController.designer.cs">
+      <DependentUpon>WelcomeSplashViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Services\CoreMLModel.cs" />
+    <Compile Include="src\Services\ModelClassLabelEncoding.cs" />
+    <Compile Include="src\Services\Anchors.cs" />
+    <Compile Include="src\Gallery\GalleryViewController.cs" />
+    <Compile Include="src\Gallery\GalleryViewController.designer.cs">
+      <DependentUpon>GalleryViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Gallery\GalleryCollectionViewSource.cs" />
+    <Compile Include="src\Gallery\Header.cs" />
+    <Compile Include="src\Gallery\Header.designer.cs">
+      <DependentUpon>Header.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Popover\PopoverViewController.cs" />
+    <Compile Include="src\Popover\PopoverViewController.designer.cs">
+      <DependentUpon>PopoverViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Popover\EditModalController.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="src\Popover\EditModalController.designer.cs">
+      <DependentUpon>EditModalController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\TimeLine\TimeLineViewController.cs" />
+    <Compile Include="src\TimeLine\TimeLineViewController.designer.cs">
+      <DependentUpon>TimeLineViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Results\ResultsViewController.cs" />
+    <Compile Include="src\Results\ResultsViewController.designer.cs">
+      <DependentUpon>ResultsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Results\NewSessionChoiceViewController.cs" />
+    <Compile Include="src\Results\NewSessionChoiceViewController.designer.cs">
+      <DependentUpon>NewSessionChoiceViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Services\PDFGeneration.cs" />
+    <Compile Include="src\AccessibilityConstants.cs" />
+    <Compile Include="src\ColourPicker\ColourPickerViewController.cs" />
+    <Compile Include="src\ColourPicker\ColourPickerViewController.designer.cs">
+      <DependentUpon>ColourPickerViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Settings\SettingsViewController.cs" />
+    <Compile Include="src\Settings\SettingsViewController.designer.cs">
+      <DependentUpon>SettingsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Settings\SettingsTableViewSource.cs" />
+    <Compile Include="src\Settings\SettingsTableViewSource.designer.cs">
+      <DependentUpon>SettingsTableViewSource.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Settings\SettingCell.cs" />
+    <Compile Include="src\Settings\SettingCell.designer.cs">
+      <DependentUpon>SettingCell.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\img\t-camera.png" />
+    <BundleResource Include="Resources\img\t-photos.png" />
+    <BundleResource Include="Resources\img\t-gallery.png" />
+    <BundleResource Include="Resources\img\t-save.png" />
+    <BundleResource Include="Resources\img\PenTool_22.png" />
+    <BundleResource Include="Resources\img\t-data-vis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\img\t-bounding_50.png" />
+    <BundleResource Include="Resources\img\t-info_50.png" />
+    <BundleResource Include="Resources\img\t-share_50.png" />
+    <BundleResource Include="Resources\img\t-close.png" />
+    <EmbeddedResource Include="Resources\classes_label_map.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Environment.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\img\t-gallery-check.png" />
+  </ItemGroup>
+  <Import Project="..\EarthLens\EarthLens.projitems" Label="Shared" Condition="Exists('..\EarthLens\EarthLens.projitems')" />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+</Project>
