@@ -1,4 +1,5 @@
 # Earth Lens
+*Please note that Microsoft will not officially support this repository starting Feb 28, 2019. However, contributions from the community are still welcome!* 
 
 [Earth Lens](https://github.com/Microsoft/Earth-Lens) leverages Microsoft’s AI tools to detect objects in aerial imagery and translate raw image data into digestible insights for researchers. With this tool, researchers will be able to automatically extract information from a large dataset and have the analysis presented in a useful and interactive view. As a result, this tool can be useful in various industrial or agricultural applications to further Microsoft’s AI For Earth commitment to sustainability.
 
